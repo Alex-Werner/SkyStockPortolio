@@ -1,0 +1,64 @@
+﻿@model SkyStockPortfolio.Models.Analyst
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Analyst</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stock_id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stock_id)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.analyst_datetime)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.analyst_datetime)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.analyst_5)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.analyst_5)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.analyst_4)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.analyst_4)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.analyst_3)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.analyst_3)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.analyst_2)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.analyst_2)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.analyst_1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.analyst_1)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.analyst_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,84 @@
+﻿@model SkyStockPortfolio.Models.Analyst
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Analyst</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.stock_id)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.stock_id)
+            @Html.ValidationMessageFor(model => model.stock_id)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.analyst_datetime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.analyst_datetime)
+            @Html.ValidationMessageFor(model => model.analyst_datetime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.analyst_5)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.analyst_5)
+            @Html.ValidationMessageFor(model => model.analyst_5)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.analyst_4)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.analyst_4)
+            @Html.ValidationMessageFor(model => model.analyst_4)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.analyst_3)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.analyst_3)
+            @Html.ValidationMessageFor(model => model.analyst_3)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.analyst_2)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.analyst_2)
+            @Html.ValidationMessageFor(model => model.analyst_2)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.analyst_1)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.analyst_1)
+            @Html.ValidationMessageFor(model => model.analyst_1)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

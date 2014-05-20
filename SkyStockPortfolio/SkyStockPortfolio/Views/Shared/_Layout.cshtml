@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1>SkyStockPortfolio :</h1> Your Stock Advisors : Manage and enhence your portfolio 
+            </header>
+        
+        
+        <div class="middle">
+
+            <div class="container">
+                <main class="content">
+                    @RenderBody()
+                </main><!-- .content -->
+            </div><!-- .container-->
+
+            <aside class="left-sidebar">
+                <strong>Mon Portfolio : + 0.05% </strong> 
+                <ul id="menu">
+                    <li><a href="/Home/Index/">Accueil</a></li>
+                    <li><a href="/Portfolio/Index/">Gerez mon portfolio</a></li>
+                </ul>
+                <h2>ADMINISTRATORS</h2>
+                <ul id="menu">
+                    <li><a href="/User/Index/">USER</a></li>
+                    <li><a href="/Stock/Index/">STOCK</a></li>
+                    <li><a href="/Price/Index/">Price</a></li>
+                    <li><a href="/Analyst/Index/">Analyst</a></li>
+
+                </ul>
+            </aside><!-- .left-sidebar -->
+
+        </div>
+        <footer class="footer">
+        </footer>
+            </div>
+        
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>

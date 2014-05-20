@@ -1,0 +1,134 @@
+﻿/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+    background-color: #F3F3F3;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 50px;
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 5px;
+	background: #222222;
+    color: #CCC;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	/*width: 100%;
+	float: left;
+	overflow: hidden;
+        */
+     position: fixed;
+    top: 55px;left: 210px;
+    right: 0;bottom: 0;
+    overflow: auto;
+    
+}
+.content {
+	/*padding: 0 0 0 270px;
+            margin: 5px;
+*/
+
+    height: 550px;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+}
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	/*float: left;
+    width: 228px;
+    margin-left: -100%;
+    position: relative;
+        */
+    background: #FFF;
+    border: 1px solid #DDD;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    width: 200px;
+    height: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+/* .footer {
+	height: 100px;
+	background: #BFF08E;
+}*/
+
+

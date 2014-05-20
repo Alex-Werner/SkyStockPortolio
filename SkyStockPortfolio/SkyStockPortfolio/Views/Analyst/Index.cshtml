@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SkyStockPortfolio.Models.Analyst>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.stock_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.analyst_datetime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.analyst_5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.analyst_4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.analyst_3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.analyst_2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.analyst_1)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.stock_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.analyst_datetime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.analyst_5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.analyst_4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.analyst_3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.analyst_2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.analyst_1)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.analyst_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.analyst_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.analyst_id })
+        </td>
+    </tr>
+}
+
+</table>

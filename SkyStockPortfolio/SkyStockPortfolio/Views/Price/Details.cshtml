@@ -1,0 +1,36 @@
+﻿@model SkyStockPortfolio.Models.Price
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Price</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stock_id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stock_id)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stock_date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stock_date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.stock_value)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.stock_value)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.price_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

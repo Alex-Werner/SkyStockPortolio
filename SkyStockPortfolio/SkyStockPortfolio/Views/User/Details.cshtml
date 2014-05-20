@@ -1,0 +1,36 @@
+﻿@model SkyStockPortfolio.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>User</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.user_pseudo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.user_pseudo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.user_password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.user_password)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.user_stocks)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.user_stocks)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.user_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
